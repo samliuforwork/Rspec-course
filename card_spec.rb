@@ -1,19 +1,9 @@
 class Card
-  attr_reader :type, :decoration
+  attr_reader :rank, :suit
 
-  def rank
-    card = Card.new('Ace', 'Spades')
-    card.type
-  end
-
-  def suit
-    card = Card.new('Ace', 'Spades')
-    card.decoration
-  end
-
-  def initialize(type, decoration)
-    @type = type
-    @decoration = decoration
+  def initialize(rank, suit)
+    @rank = rank
+    @suit = suit
   end
 
 end
